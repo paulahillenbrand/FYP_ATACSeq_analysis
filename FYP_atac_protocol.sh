@@ -211,6 +211,8 @@ plotHeatmap \
 -m /atac/TSS_coverage/{samp_name}/{samp_name}_NucleosomeFree_tss.mat.gz \
 -out /atac/TSS_coverage/{samp_name}/{samp_name}_NucleosomeFree \
 --sortUsing sum \
+--yMin 0 \
+--yMax 5 \
 --endLabel . 
 
 # Mononucleosomes
@@ -229,6 +231,8 @@ plotHeatmap \
 -m /atac/TSS_coverage/{samp_name}/{samp_name}_mononucleosome_tss.mat.gz \
 -out /atac/TSS_coverage/{samp_name}/{samp_name}_mononucleosome \
 --sortUsing sum \
+--yMin 0 \
+--yMax 1.3 \
 --endLabel . 
 
 
@@ -249,7 +253,7 @@ plotHeatmap \
 -out /atac/TSS_coverage/NucleosomeFree \
 --sortUsing sum \
 --endLabel . \
---yMin 0
+--yMin 0 
 
 # mononucleosomes
 computeMatrix scale-regions \
@@ -267,7 +271,8 @@ plotHeatmap \
 -out /atac/TSS_coverage/mononucleosome \
 --sortUsing sum \
 --endLabel . \
---yMin 0
+--yMin 0 \
+--yMax 1.5
 
 ## Coverage across genes
 # nucleosome free
