@@ -13,6 +13,7 @@ conda install bioconda::bedtools=2.29.1
 conda install bioconda::deeptools=2.0 
 conda install bioconda::picard=2.18.29
 conda install bioconda::sambamba=1.0.1
+conda install bioconda::macs2=2.2.6
 
 ## FastQC
 fastqc /atac/rawdata/{samp_name}
